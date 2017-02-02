@@ -18,8 +18,8 @@ class MainApp < Sinatra::Base
 
   def client
     @client ||= Line::Bot::Client.new { |config|
-      config.channel_secret = ENV["LINE_CHANNEL_SECRET"]
-      config.channel_token = ENV["LINE_CHANNEL_TOKEN"]
+      config.channel_secret = "54fc2d8735db8531e19c5181ba417826"
+      config.channel_token = "VizlTDT0WdyQ8bZUBd0VKkx7HWQ601zKKCBy0yqop+x4LINs2MGcYBIOYpGe6S1M3KyNt//YSKQc0jB3hbgva8MIHZw079nYSmY512aMvgD8NHsrl8ACcNayDx/S0XHmDgCAau5jHUrWKzMxq6V6iAdB04t89/1O/w1cDnyilFU="
     }
   end
   
